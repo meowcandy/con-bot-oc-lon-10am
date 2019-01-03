@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = Client()
 client.on('ready', ()=>{
     console.log("Ai am back!");
     client.user.setStatus('available')
