@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 bot.on('ready', ()=>{
     console.log("Ai am back!");
-    bot.user.setStatus('invisible')
+    bot.user.setStatus('available')
     bot.user.setPresence({
         game: {
             name: 'Lăn ra ngủ rồi',
