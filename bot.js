@@ -1,5 +1,5 @@
-const Discord = require('discord.js')
-const client = Client()
+const Discord = require('discord.js');
+const client = Client();
 client.on('ready', ()=>{
     console.log("Ai am back!");
     client.user.setStatus('available')
