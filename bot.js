@@ -24,7 +24,7 @@ function leftToEight(){
 function sendMessage(){
     var guild = client.guilds.get('413303388030107658');
     if(guild && guild.channels.get('530288707467608065')){
-        guild.channels.get('530288707467608065').send("Sắp có rồng kìa, chuẩn bị go pro thôi các giáo sư @Go pro !!!");
+        guild.channels.get('530288707467608065').send("Sắp có rồng kìa, chuẩn bị go pro thôi các giáo sư @Gopro !!!");
     }
 }
 client.login("process.env.BOT_TOKEN");
