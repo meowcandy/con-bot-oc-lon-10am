@@ -2,8 +2,8 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 client.on('ready', ()=>{
     console.log("Ai am back!");
-    bot.user.setStatus('available')
-    bot.user.setPresence({
+    client.user.setStatus('available')
+    client.user.setPresence({
         game: {
             name: 'Lăn ra ngủ rồi',
             type: "PLAYING"
