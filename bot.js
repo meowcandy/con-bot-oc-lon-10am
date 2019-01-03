@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
-const bot = new Discord.Client()
-bot.on('ready', ()=>{
+const client = new Discord.Client()
+client.on('ready', ()=>{
     console.log("Ai am back!");
     bot.user.setStatus('available')
     bot.user.setPresence({
@@ -22,9 +22,9 @@ function leftToEight(){
     return (-d + d.setHours(3,0,0,0));
 }
 function sendMessage(){
-    var guild = bot.guilds.get('413303388030107658');
+    var guild = client.guilds.get('413303388030107658');
     if(guild && guild.channels.get('530288707467608065')){
         guild.channels.get('530288707467608065').send("Sắp có rồng kìa, chuẩn bị go pro thôi các giáo sư @Go pro !!!");
     }
 }
-bot.login("process.env.BOT_TOKEN");
+client.login("process.env.BOT_TOKEN");
